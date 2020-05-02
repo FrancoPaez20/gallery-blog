@@ -59,7 +59,7 @@ h1{
 	font-weight: 900;
 	font-family: 'Poppins', sans-serif;
 }
-
+/*INICIO DEL CONTENEDOR DE LAS TARJETAS*/
 .wrap{
 
 	max-width: 1200px;
@@ -75,7 +75,9 @@ h1{
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+/*FIN DEL CONTENEDOR DE LAS TARJETAS*/
 
+/*INICIO DE LA TARJETAS*/
 .card{
 	
 	min-width: 300px;
@@ -89,12 +91,13 @@ h1{
 
 	box-shadow: 0 0 20px 5px #dadada;
 }
+/*FIN DE LA TARJETAS*/
 
 /*INICIO IMAGEN DE LA TARJETA*/
 .card__image{
 
 	width: 100%;
-	height: 220px;
+	height: 200px;
 	position: relative;
 }
 
@@ -111,7 +114,7 @@ h1{
 	background: #ed4956;
 	color: var(--blanco);
 	bottom: 0;
-	right: 24px;
+	right: 20px;
 	height: 56px;
 	width: 56px;
 	text-align: center;
@@ -133,6 +136,7 @@ h1{
 	padding: 20px;
 	width: 100%;
 	background: var(--blanco);
+	word-wrap: break-word;
 }
 
 .body__date{
@@ -155,6 +159,28 @@ h1{
 	font-size: 1.2em;
 }
 
+.body__tags{
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px 0px 20px 0px;
+}
+
+.body__tags p{
+
+	font-size: .8em;
+	font-weight: 300;
+	padding: 5px 10px;
+	margin: 10px 10px 0 0;
+	background-color: #26a69a;
+	border-radius: 50px;
+	color: var(--blanco);
+}
+
 .body__tittle{
 
 	font-size: 1.25em;
@@ -168,6 +194,7 @@ h1{
 	font-size: 1em;
 	margin-bottom: 20px;
 	line-height: 1.65;
+	color: rgba(0,0,0,.6);
 }
 /*FIN CUERPO DE LA NOTICIA*/
 
